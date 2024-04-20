@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "**paulo**@rstats**::**genomics"
+  site-url: "https://paulobarros.com.br"
+  page-navigation: true
+  repo-link-target: "_blank"
+  
+  sidebar:
+    logo: images/logo_chick.png
+    pinned: true
+    collapse-level: 3
+    style: "docked"
+    search: true
+    align: center
+    contents:
+      - href: index.qmd
+        text: Chicken Diversity
+    tools: 
+      - icon: globe
+        href: https://paulobarros.com.br
+        text: "paulobarros.com.br"
+      - icon: github
+        href: https://github.com/paulobarros/chicksdiversity
+        text: "Git Hub Repo for this project"
+      - icon: twitter
+        href: https://twitter.com/pbarrosjr
+        text: "Paulo Barros Twitter"   
+        
+  page-footer:
+    left: "![](images/pb.png){width=50} [**paulo**@rstats**::**genomics](http://paulobarros.com.br) > License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    center: "![](images/MM.png){width=40}"
+    right:
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+      - icon: envelope
+        href: mailto:pbarrosbio@gmail.com
+format:
+  html:
+    theme: 
+      - litera
+      - pb-quarto.scss
+    css: styles.css
+    code-copy: true
+    code-overflow: wrap
+    code-block-bg: "#1A3434"
+    code-block-border-left: "#FFF0B0"
+    code-line-numbers: true
+    highlight-style: dracula
+    toc: true
+
+editor: source
